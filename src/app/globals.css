@@ -1,25 +1,65 @@
 @import "tailwindcss";
-@import "../styles/themes.css";
+
+:root {
+  color-scheme: light dark;
+  --bg: #faf8f4;
+  --surface: #f2eee7;
+  --fg: #1c1b19;
+  --muted: #5b564e;
+  --accent: #1f4e8c;
+  --on-accent: #faf8f4;
+  --line: #ddd6ca;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #12151a;
+    --surface: #181c23;
+    --fg: #ecebe6;
+    --muted: #a6a9ae;
+    --accent: #86b2f2;
+    --on-accent: #12151a;
+    --line: #2a303a;
+  }
+}
 
 @theme inline {
-  --font-sans: var(--font-body);
-  --font-mono: var(--font-mono);
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-fg: var(--fg);
+  --color-muted: var(--muted);
+  --color-accent: var(--accent);
+  --color-on-accent: var(--on-accent);
+  --color-line: var(--line);
+  --font-sans: var(--font-source-sans), system-ui, sans-serif;
+  --font-display: var(--font-fraunces), Georgia, serif;
 }
 
 html {
   scroll-behavior: smooth;
+  background: var(--bg);
 }
 
-@media (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
-  }
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-sans);
 }
 
-@keyframes hero-in {
+::selection {
+  background: color-mix(in srgb, var(--accent) 30%, transparent);
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+@keyframes rise {
   from {
     opacity: 0;
-    transform: translateY(0.6rem);
+    transform: translateY(0.5rem);
   }
   to {
     opacity: 1;
@@ -27,29 +67,16 @@ html {
   }
 }
 
-.hero-name {
-  animation: hero-in 0.7s ease-out both;
-}
-
-.hero-fade {
-  animation: hero-in 0.7s ease-out both;
-  animation-delay: 80ms;
+.rise {
+  animation: rise 0.6s ease-out both;
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .hero-name,
-  .hero-fade {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .rise {
     animation: none;
   }
-}
-
-::selection {
-  background: color-mix(in srgb, var(--accent) 35%, transparent);
-  color: var(--fg);
-}
-
-a:focus-visible,
-button:focus-visible {
-  outline: 2px solid var(--accent);
-  outline-offset: 3px;
 }
