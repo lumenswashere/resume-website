@@ -5,156 +5,173 @@ export const profile = {
   email: "josiahwwoltjer@gmail.com",
   linkedin: "https://www.linkedin.com/in/josiah-woltjer-a03785260/",
   resumePdf: "/Josiah_Woltjer_Resume.pdf",
-  title: "Functional Implementation Consultant Lead, ePAS NA",
+  title: "Functional Implementation Consultant Lead, ePAS North America",
   company: "Prometheus Group",
 };
 
 export const hero = {
-  headline: "I own the hard parts of getting software into the field.",
+  headline: "I own the hard parts of getting enterprise software into the field.",
   support:
-    "AI-native operator who implements, trains, and stabilizes enterprise systems without a babysitter. Comfortable onsite with customers, in the weeds with engineering, and building the tools that make the next job faster.",
+    "I configure, train, and stabilize enterprise systems for large industrial customers, work onsite when a project calls for it, and build AI tooling that makes the next implementation faster.",
   openTo:
-    "Open to implementation consulting, solutions and sales engineering, forward-deployed roles, and AI systems work at software and AI companies. Also building toward founder and M7 MBA paths.",
+    "I am open to implementation consulting, solutions and sales engineering, forward-deployed roles, and AI systems work at software and AI companies. Longer term, I am preparing for an M7 MBA and a path into founding a company.",
 };
 
-export const proof = [
-  {
-    value: 11,
-    prefix: "~",
-    suffix: " mo",
-    label: "to Lead promotion",
-  },
-  {
-    value: 23,
-    prefix: "",
-    suffix: "",
-    label: "enterprise accounts owned",
-  },
-  {
-    value: 9,
-    prefix: "~",
-    suffix: "",
-    label: "active at once",
-  },
-  {
-    value: 60,
-    prefix: "",
-    suffix: "+",
-    label: "trained per solo session",
-  },
-  {
-    value: 17,
-    prefix: "",
-    suffix: " days",
-    label: "solo onsite escalation",
-  },
-  {
-    value: 3.92,
-    prefix: "",
-    suffix: "",
-    label: "GPA, Summa Cum Laude",
-    decimals: 2,
-  },
+export const nav = [
+  { href: "#experience", label: "Experience" },
+  { href: "#ai", label: "AI" },
+  { href: "#field", label: "Field work" },
+  { href: "#customers", label: "Customers" },
+  { href: "#recognition", label: "Recognition" },
+  { href: "#contact", label: "Contact" },
 ] as const;
 
+export const impact = [
+  { figure: "~11 mo", label: "From hire to Lead promotion" },
+  { figure: "23", label: "Enterprise accounts as primary consultant" },
+  { figure: "~9", label: "Accounts active at any one time" },
+  { figure: "60+", label: "Attendees per solo training session" },
+  { figure: "17 days", label: "Solo onsite escalation in Alberta" },
+  { figure: "3.92", label: "GPA, Summa Cum Laude" },
+];
+
+export const experience = {
+  heading: "Experience",
+  roles: [
+    {
+      company: "Prometheus Group",
+      dates: "August 2025 to present",
+      positions: [
+        {
+          title: "Functional Implementation Consultant Lead, ePAS North America",
+          dates: "July 2026 to present",
+        },
+        {
+          title: "Functional Implementation Consultant",
+          dates: "August 2025 to July 2026",
+        },
+      ],
+      points: [
+        "Escalation point and internal expert on ePAS functionality, customer tendencies, and best-practice configuration. I lead and mentor the functional consultant team.",
+        "Primary consultant across 23 enterprise accounts, about 9 active at a time, several with seven-figure annual contract value. I own the full implementation lifecycle for each.",
+        "Leading development of automated configuration and product-improvement tooling, and AI knowledge systems that scale the team's output.",
+      ],
+    },
+    {
+      company: "Apex Companies",
+      dates: "August 2024 to August 2025",
+      positions: [
+        { title: "Project Engineer", dates: "February 2025 to August 2025" },
+        { title: "Inside Project Manager", dates: "August 2024 to February 2025" },
+      ],
+      points: [
+        "Created engineering drawing sets for quotes, approvals, permits, and installations, and made site visits to keep projects moving.",
+        "Managed schedules and project documents in Vault and Smartsheet.",
+        "Released purchase orders and tracked jobs against promised completion dates.",
+      ],
+    },
+  ],
+};
+
 export const aiNative = {
-  heading: "How I work with AI",
+  heading: "How I use AI at work",
   intro:
-    "I use Claude and Cursor as part of how I ship, not as a novelty. When something is manual and repeatable, I automate it. When I do not know a domain, I learn it end to end.",
+    "Claude and Cursor are part of how I deliver, not an add-on. If a task is manual and repeats, I automate it. If I do not know a domain, I learn it end to end.",
   points: [
     {
       title: "Agentic tooling for implementations",
-      body: "Leading development of automated ePAS configuration and product-improvement tooling on the implementation team. Turning one-off config work into something the team can reuse.",
+      body: "I lead development of automated ePAS configuration and product-improvement tooling for the implementation team, turning one-off configuration work into something every consultant can reuse.",
     },
     {
       title: "Internal knowledge systems",
-      body: "Building AI knowledge systems with semantic search, plus customer knowledge bases generated from meeting transcripts, in collaboration with leadership. Goal is scale, not tiny efficiency gains.",
+      body: "With leadership, I build AI knowledge systems with semantic search, plus customer knowledge bases generated from meeting transcripts. The aim is to scale the team, not to shave minutes off a single task.",
     },
     {
       title: "Shipped product",
-      body: "Design, build, and maintain personal web apps with agentic coding tools. Public example: by-ff.com, an NFL fantasy analysis app on Cursor, Claude, Supabase, and Vercel.",
+      body: "I design, build, and maintain personal web apps with agentic coding tools. The public one is by-ff.com, an NFL fantasy analysis app built with Cursor, Claude, Supabase, and Vercel.",
       href: "https://by-ff.com",
-      hrefLabel: "by-ff.com",
+      hrefLabel: "Visit by-ff.com",
     },
     {
-      title: "Learn anything mode",
-      body: "On a first-of-kind integrated implementation for a U.S. food manufacturer, I taught myself adjacent Prometheus products outside my core lane so SAP, Vulcan, Mobile PM, and ePAS could line up.",
+      title: "Learning new domains fast",
+      body: "On a first-of-kind integrated implementation for a U.S. food manufacturer, I taught myself the adjacent Prometheus products outside my core lane, so SAP, Vulcan, Mobile PM, and ePAS could work together.",
     },
   ],
 };
 
 export const forwardDeployed = {
-  heading: "Forward deployed, not remote only",
+  heading: "Forward-deployed work",
   lead: {
     title: "17 days onsite at a Canadian energy producer",
     location: "Foster Creek area, Alberta",
     date: "February 2026",
-    body: "Leadership sent me solo to stabilize a major escalation during ePAS Mobile performance issues. I was the only onsite contact: triage issues, talk fixes to development, apply resolutions, and rebuild customer confidence.",
+    body: "Leadership sent me alone to stabilize a major escalation over ePAS Mobile performance. As the only onsite contact, I triaged issues, worked fixes through with development, applied resolutions, and rebuilt customer confidence.",
     detail:
-      "Reproduced a duplicating-approval mobile-sync bug that dev and QA could not hit by using office elevators as connectivity blockers to mimic field conditions. That repro let engineering fix the issue and feed broader mobile-sync improvements.",
+      "Development and QA could not reproduce a duplicating-approval bug in mobile sync. I used the office elevators as connectivity dead zones to mimic field conditions and reproduced it. That let engineering fix the bug and informed wider mobile-sync improvements.",
   },
   stories: [
     {
-      client: "European specialty chemicals manufacturer (EMEA)",
-      body: "Sole consultant on a Cologne expansion. Owned delivery and did a large share of the configuration myself. Customer confidence and EMEA sales feedback helped accelerate a global rollout conversation that had been deferred.",
+      client: "European specialty chemicals manufacturer",
+      body: "Sole consultant on a Cologne expansion. I owned delivery and completed much of the configuration myself. The customer's confidence, relayed through EMEA sales, helped move a deferred global rollout discussion forward.",
     },
     {
       client: "U.S. power company",
-      body: "Took over as lead consultant with full ownership of delivery and customer engagement, including a LOTO consolidation effort.",
+      body: "Took over as lead consultant with full ownership of delivery and the customer relationship, including a LOTO consolidation effort.",
     },
     {
       client: "U.S. energy developer",
-      body: "Built ePAS workflows from scratch with minimal design notes. Got a direct customer shout-out on the implementation effort.",
+      body: "Built ePAS workflows from scratch with minimal design notes and received direct customer recognition for the implementation.",
     },
     {
       client: "U.S. food manufacturer",
-      body: "Leading a first-of-kind integrated implementation tying SAP, Vulcan, and Mobile PM into ePAS. Own process discovery and the full project lifecycle.",
+      body: "Leading a first-of-kind integrated implementation that connects SAP, Vulcan, and Mobile PM to ePAS. I own process discovery and the full project lifecycle.",
     },
     {
       client: "U.S. refining company",
-      body: "Supported sales onsite with solution demonstration. Helped move the customer decision to adopt ePAS.",
+      body: "Supported the sales team onsite with a solution demonstration that helped the customer decide to adopt ePAS.",
     },
   ],
 };
 
 export const customerFacing = {
-  heading: "Customer facing: tester, trainer, engineer",
+  heading: "Customer-facing delivery",
   intro:
-    "I am comfortable in the room. Training floors, escalation calls, and config work are the same job with different hats.",
+    "Training, escalations, and configuration are one job: getting the customer to a system they trust and can run themselves.",
   points: [
     {
-      title: "Solo training at scale",
-      body: "Led customer trainings of 60+ attendees per session with no co-facilitator. About 200 people across four trainings.",
+      title: "Training at scale",
+      body: "Led customer trainings of 60+ attendees per session with no co-facilitator, reaching about 200 people across four trainings.",
     },
     {
       title: "Train-the-Trainer",
       body: "Delivered the first in-person Train-the-Trainer session for a Japanese specialty materials manufacturer, including their Hot Work permitting process.",
     },
     {
-      title: "Escalation SME",
-      body: "Lead and mentor the functional consultant team. Escalation point for ePAS functionality, customer tendencies, and best-practice configuration for consultants and project managers.",
+      title: "Escalation expert",
+      body: "The escalation point for consultants and project managers on ePAS functionality, customer tendencies, and best-practice configuration.",
     },
     {
       title: "Portfolio ownership",
-      body: "Primary consultant across 23 enterprise accounts, about 9 active at a time. Scope originally staffed for a three-person team. Promoted to Lead for ePAS North America in July 2026, about 11 months after hire.",
+      body: "Primary consultant across 23 enterprise accounts, in a scope originally staffed for three people. Promoted to Lead for ePAS North America in July 2026, about 11 months after joining.",
     },
   ],
 };
 
-export const founder = {
-  heading: "Builder and founder instincts",
-  body: "I take work that should need a team and make it move. At Prometheus I run a portfolio sized for three people, invent internal tooling so the next consultant is not starting from zero, and ship my own products when I need a system that does not exist yet. That is the same muscle I want to put into an early-stage company and an M7 MBA with an AI focus.",
+export type Recognition = {
+  attribution: string;
+  date: string;
+  quote?: string;
+  summary?: string;
 };
 
-export const compliments = {
-  heading: "What customers said",
+export const recognition = {
+  heading: "Customer recognition",
   items: [
     {
-      quote:
-        "VERY impressed at the support... now considering a global rollout imminently.",
-      attribution:
-        "EMEA operations stakeholder, European specialty chemicals manufacturer",
-      date: "March 2026",
+      summary:
+        "Praised for professionalism and velocity during an onsite engagement, with a direct thank-you from the customer.",
+      attribution: "U.S. energy customer, onsite engagement",
+      date: "September 2026",
     },
     {
       quote:
@@ -164,48 +181,56 @@ export const compliments = {
     },
     {
       quote:
-        "Positive reviews following the onsite stabilization work during the mobile performance escalation.",
-      attribution: "Canadian energy producer (Alberta)",
+        "VERY impressed at the support... now considering a global rollout imminently.",
+      attribution:
+        "EMEA operations stakeholder, European specialty chemicals manufacturer",
+      date: "March 2026",
+    },
+    {
+      summary:
+        "Positive customer reviews followed the onsite stabilization work during the mobile performance escalation.",
+      attribution: "Canadian energy producer, Alberta",
       date: "February 2026",
     },
-  ],
+  ] satisfies Recognition[],
 };
 
 export const skills = {
-  heading: "Tools I actually use",
-  primary: [
-    "Claude",
-    "Cursor",
-    "Lovable",
-    "Vercel",
-    "SQL / PostgreSQL",
-    "Supabase",
-    "Jira",
-    "Confluence",
-    "Linear",
-    "ePAS",
-    "SAP",
-    "Maximo",
-    "Database management",
-  ],
-  foundation:
-    "Engineering foundation: SolidWorks and AutoCAD from a mechanical engineering track. Useful for reading drawings and talking plant reality. Not the center of the story anymore.",
-};
-
-export const experience = {
-  heading: "Where I have worked",
-  roles: [
+  heading: "Tools and platforms",
+  groups: [
     {
-      company: "Prometheus Group",
-      title: "Functional Implementation Consultant Lead, ePAS NA",
-      dates: "July 2026 – Present",
-      note: "Promoted from Functional Implementation Consultant (Aug 2025 – Jul 2026).",
+      label: "AI and product building",
+      items: ["Claude", "Cursor", "Lovable", "Vercel", "Supabase", "SQL / PostgreSQL"],
     },
     {
-      company: "Apex Companies",
-      title: "Project Engineer / Inside Project Manager",
-      dates: "August 2024 – August 2025",
-      note: "Engineering drawing sets, site visits, schedule and document control with Vault and Smartsheet. Purchase orders and job completion tracking.",
+      label: "Enterprise systems",
+      items: ["ePAS", "SAP", "Maximo", "Database management"],
+    },
+    {
+      label: "Project delivery",
+      items: ["Jira", "Confluence", "Linear"],
+    },
+    {
+      label: "Engineering",
+      items: ["SolidWorks", "AutoCAD"],
+    },
+  ],
+};
+
+export const projects = {
+  heading: "Projects",
+  items: [
+    {
+      title: "Electronic Settlers of Catan",
+      meta: "Capstone final design · Spring 2024",
+      body: "Led design, prototyping, and cross-team communication on my own, taking an electronic tabletop game from concept to a working prototype. I designed and built it with SolidWorks, a laser cutter, CNC machining, and other manufacturing techniques, and programmed it with AI coding agents and the Arduino IDE.",
+    },
+    {
+      title: "NFL player data modeling",
+      meta: "Personal project · October 2024 to present",
+      body: "A deployed public web app that analyzes NFL player fantasy value, built and maintained with Cursor, Claude, Supabase, and Vercel.",
+      href: "https://by-ff.com",
+      hrefLabel: "Visit by-ff.com",
     },
   ],
 };
@@ -215,7 +240,7 @@ export const education = {
   degrees: [
     {
       school: "Illinois Institute of Technology",
-      detail: "B.S. Mechanical Engineering, Summa Cum Laude (GPA 3.92; ACT 35)",
+      detail: "B.S. Mechanical Engineering, Summa Cum Laude (GPA 3.92, ACT 35)",
     },
     {
       school: "Wheaton College",
@@ -223,15 +248,16 @@ export const education = {
         "B.S. Liberal Arts Engineering, Math Minor, Summa Cum Laude (GPA 3.92)",
     },
   ],
-  honors:
-    "Rensselaer Medalist. Presidential Scholarship. Koch Family Foundation Scholarship. National Merit Commended. 8x Dean's List.",
+  honors: [
+    "Rensselaer Medalist",
+    "Presidential Scholarship",
+    "Koch Family Foundation Scholarship",
+    "National Merit Commended",
+    "8x Dean's List",
+  ],
 };
 
-export const nav = [
-  { href: "#proof", label: "Proof" },
-  { href: "#ai", label: "AI" },
-  { href: "#field", label: "Field" },
-  { href: "#customers", label: "Customers" },
-  { href: "#praise", label: "Praise" },
-  { href: "#contact", label: "Contact" },
-] as const;
+export const direction = {
+  heading: "Where I am headed",
+  body: "I take work that would normally need a team and make it move. At Prometheus I carry a portfolio sized for three people and build internal tooling so the next consultant does not start from zero. When a system I need does not exist, I build it. I want to bring that to an early-stage company, and to an M7 MBA with an AI focus.",
+};

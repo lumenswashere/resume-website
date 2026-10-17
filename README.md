@@ -1,13 +1,13 @@
-# Josiah Woltjer Portfolio
+# Josiah Woltjer Resume Website
 
-Personal portfolio site for AI and software recruiting, solutions and implementation roles, and MBA applications.
+Personal resume site for implementation, solutions engineering, and AI roles, and for MBA applications.
 
 ## Stack
 
 - Next.js (App Router)
 - TypeScript
 - Tailwind CSS v4
-- Four toggleable design palettes (Field Ops, Signal, Brief, Grid)
+- Light and dark appearance follow the visitor's system setting
 
 ## Local development
 
@@ -22,18 +22,8 @@ Open [http://localhost:3000](http://localhost:3000).
 
 1. Push this repo to GitHub.
 2. Import the project in Vercel (framework preset: Next.js).
-3. Deploy. No environment variables required for v1.
-
-Or from the CLI:
-
-```bash
-npx vercel
-```
+3. Deploy. No environment variables are required.
 
 ## Content
 
-All copy lives in `src/content/portfolio.ts`. Customer and individual names are anonymized by design. Theme tokens live in `src/styles/themes.css`.
-
-## Theme toggle
-
-Use the palette control in the bottom-right corner. Choice is stored in `localStorage` under `josiah-theme`.
+All copy lives in `src/content/portfolio.ts`. Customer and individual names are anonymized. Color and font tokens live in `src/app/globals.css`.

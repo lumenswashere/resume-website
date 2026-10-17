@@ -1,59 +1,32 @@
 import { aiNative } from "@/content/portfolio";
-import { SectionHeading } from "./SectionHeading";
+import { Section } from "./Section";
 
 export function AiNative() {
   return (
-    <section
-      id="ai"
-      className="scroll-mt-8 px-5 py-20 sm:px-8 lg:px-12"
-      aria-labelledby="ai-heading"
-    >
-      <div className="mx-auto max-w-6xl">
-        <SectionHeading id="ai-heading" eyebrow="Differentiator">
-          {aiNative.heading}
-        </SectionHeading>
-        <p
-          className="mb-12 max-w-2xl text-lg leading-relaxed"
-          style={{ color: "var(--muted)" }}
-        >
-          {aiNative.intro}
-        </p>
-        <ul className="grid gap-10 md:grid-cols-2">
-          {aiNative.points.map((point) => (
-            <li key={point.title} className="max-w-md">
-              <h3
-                className="text-xl font-semibold tracking-tight"
-                style={{
-                  fontFamily: "var(--font-display)",
-                  color: "var(--fg)",
-                }}
+    <Section id="ai" label="Applied AI" title={aiNative.heading} tone="tint">
+      <p className="max-w-2xl text-lg leading-relaxed text-muted">
+        {aiNative.intro}
+      </p>
+      <ul className="mt-10 grid gap-x-10 gap-y-9 sm:grid-cols-2">
+        {aiNative.points.map((point) => (
+          <li key={point.title}>
+            <h3 className="font-display text-xl font-semibold tracking-tight">
+              {point.title}
+            </h3>
+            <p className="mt-2 leading-relaxed text-muted">{point.body}</p>
+            {"href" in point && point.href ? (
+              <a
+                href={point.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-2 inline-block font-semibold text-accent underline underline-offset-4 hover:opacity-80"
               >
-                {point.title}
-              </h3>
-              <p
-                className="mt-3 text-base leading-relaxed"
-                style={{ color: "var(--muted)" }}
-              >
-                {point.body}
-                {"href" in point && point.href ? (
-                  <>
-                    {" "}
-                    <a
-                      href={point.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="underline underline-offset-4 transition-opacity hover:opacity-80"
-                      style={{ color: "var(--accent)" }}
-                    >
-                      {point.hrefLabel}
-                    </a>
-                  </>
-                ) : null}
-              </p>
-            </li>
-          ))}
-        </ul>
-      </div>
-    </section>
+                {point.hrefLabel}
+              </a>
+            ) : null}
+          </li>
+        ))}
+      </ul>
+    </Section>
   );
 }
